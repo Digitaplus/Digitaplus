@@ -1,0 +1,513 @@
+
+          /*les proprités enumérés ici concernent toute la page */
+*{
+    margin:0; padding:0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    outline: none; border:none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: .2s linear;
+}
+
+      /*cette partie est pour la taille max de la page insi que les scrolls*/
+
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    scroll-padding-top: 6rem;
+    overflow-x: hidden;
+}
+
+   /*cette fontionnalité est là par anticipation de la marge interieur des sections*/ 
+
+section{
+    padding:2rem 9%;
+}
+
+  /*debut de l'entête */
+  header #toggler{
+    display: none;
+}
+
+header .fa-bars{
+    font-size: 3rem;
+    color:#333;
+    border-radius: .5rem;
+    padding:.5rem 1.5rem;
+    cursor: pointer;
+    border:.1rem solid #0000004d;
+    display: none;
+}
+
+  .header{
+    position: fixed;
+    top:0; left:0; right:0;
+    background:#fff;
+    padding:2rem 9%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    z-index: 1000;
+    box-shadow: 0 .5rem 1rem #0000001a;
+ }
+
+.header .logo{
+    font-size: 3rem;
+    color:#333;
+    font-weight: bolder;
+}
+
+.header .logo span{
+    color:crimson;
+}
+
+.header .liens a{
+    font-size: 2rem;
+    padding:0 2.5rem;
+    color:#666;
+}
+
+.header .liens a:hover{
+    color:crimson;
+}
+     /*fin de l'entête*/
+
+
+     /*debut de la section1*/
+     
+.section1{
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+    background:url(../images/home-bg.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.section1 .content{
+    max-width: 50rem;
+}
+
+.section1 .content h3{
+    font-size: 6rem;
+    color:#333;
+}
+
+.section1 .content span{
+    font-size: 3.5rem;
+    color:crimson;
+    padding:1rem 0;
+    line-height: 1.5;
+}
+
+.section1 .content p{
+    font-size: 1.5rem;
+    color:#999;
+    padding:1rem 0;
+    line-height: 1.5;
+}  
+     /*fin de section1*/
+
+
+     /*debut du boutton */
+     .btn{
+        display: inline-block;
+        margin-top: 1rem;
+        border-radius: 5rem;
+        background:#333;
+        color:#fff;
+        padding:.9rem 3.5rem;
+        cursor: pointer;
+        font-size: 1.7rem;
+    }
+    
+    .btn:hover{
+        background:crimson;
+    }
+     /*fin du boutton*/
+
+
+     /*debut de la section 2*/
+     .apropos .ligne{
+        display: flex;
+        align-items: center;
+        gap:2rem;
+        flex-wrap: wrap;
+        padding:2rem 0;
+        padding-bottom: 3rem;
+    }
+    
+    .apropos .ligne .video{
+        flex:1 1 40rem;
+        position: relative;
+    }
+    
+    .apropos .ligne .video video{
+        width:100%;
+        border:1.5rem solid #fff;
+        border-radius: .5rem;
+        box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+        height: 100%;
+        object-fit: cover;
+    }
+    
+    .apropos .ligne .video h3{
+        position: absolute;
+        top:50%; transform: translateY(-50%);
+        font-size: 3rem;
+        background:#fff;
+        width:100%;
+        padding:1rem 2rem;
+        text-align: center;
+        mix-blend-mode: screen;
+    }
+    
+    .apropos .ligne .content{
+        flex:1 1 40rem;
+    }
+    
+    .apropos .ligne .content h3{
+        font-size: 3rem;
+        color:#333;
+    }
+    
+    .apropos .ligne .content p{
+        font-size: 1.5rem;
+        color:#999;
+        padding:.5rem 0;
+        padding-top: 1rem;
+        line-height: 1.5;
+    }
+    
+     /*fin de la section 2*/
+
+     /*debut des titre*/
+
+     .titre{
+        text-align: center;
+        font-size: 4rem;
+        color:#333;
+        padding:1rem;
+        margin:2rem 0;
+        background:#ff33990d;
+    }
+    
+    .titre span{
+        color:crimson;
+    }
+    /*fin des titres*/
+
+    /*debut section 3*/
+    
+.section3{
+    background:#eee;
+    display: flex;
+    flex-wrap: wrap;
+    gap:1.5rem;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+.section3 .icone{
+    background:#fff;
+    border:.1rem solid #0000001a;
+    padding:2rem;
+    display: flex;
+    align-items: center;
+    flex:1 1 25rem;
+}
+
+.section3 .icone img{
+    height:5rem;
+    margin-right: 2rem;
+}
+
+.section3 .icone h3{
+    color:#333;
+    padding-bottom: .5rem;
+    font-size: 1.5rem;
+}
+
+.section3 .icone span{
+    color:#555;
+    font-size: 1.3rem;
+}
+
+    /*fin section 3*/
+
+    /*debut section 4*/
+
+    .section4 .conteneur_boite{
+        display: flex;
+        flex-wrap: wrap;
+        gap:1.5rem;
+    }
+    
+    .section4 .conteneur_boite .boite{
+        flex:1 1 30rem;
+        box-shadow: 0 .5rem 1.5rem #0000001a;
+        border-radius: .5rem;
+        border:.1rem solid #0000001a;
+        position: relative;    
+    }
+    
+    .section4 .conteneur_boite .boite .reduction{
+        position: absolute;
+        top:1rem; left:1rem;
+        padding:.7rem 1rem;
+        font-size: 2rem;
+        color:crimson;
+        background:#ff33990d;
+        z-index: 1;
+        border-radius: .5rem;
+    }
+    
+    .section4 .conteneur_boite .boite .image{
+        position: relative;
+        text-align: center;
+        padding-top: 2rem;
+        overflow:hidden;
+    }
+    
+    .section4 .conteneur_boite .boite .image img{
+        height:25rem;
+    }
+    
+    .section4 .conteneur_boite .boite:hover .image img{
+        transform: scale(1.1);
+    }
+    
+    .section4 .conteneur_boite .boite .image .icone{
+        position: absolute;
+        bottom:-7rem; left:0; right:0;
+        display: flex;
+    }
+    
+    .section4 .conteneur_boite .boite:hover .image .icone{
+        bottom:0;
+    }
+    
+    .section4 .conteneur_boite .boite .image .icone a{
+        height: 5rem;
+        line-height: 5rem;
+        font-size: 2rem;
+        width:50%;
+        background:crimson;
+        color:#fff;
+    }
+    
+    .section4 .conteneur_boite .boite .image .icone .cart-btn{
+        border-left: .1rem solid #fff7;
+        border-right: .1rem solid #fff7;
+        width:100%;
+    }
+    
+    .section4 .conteneur_boite .boite .image .icone a:hover{
+        background:#333;
+    }
+    
+    .section4 .conteneur_boite .boite .content{
+        padding:2rem;
+        text-align: center;
+    }
+    
+    .section4 .conteneur_boite .boite .content h3{
+        font-size: 2.5rem;
+        color:#333;
+    }
+    
+    .section4 .conteneur_boite .boite .content .prix{
+        font-size: 2.5rem;
+        color:crimson;
+        font-weight: bolder;
+        padding-top: 1rem;
+    }
+    
+    .section4 .conteneur_boite .boite .content .prix span{
+        font-size: 1.5rem;
+        color:#999;
+        font-weight: lighter;
+        text-decoration: line-through;
+    }
+    /*fin section 4*/
+
+    /*debut section 5*/
+    
+.contact .ligne{
+    display: flex;
+    flex-wrap: wrap-reverse;
+    gap:1.5rem;
+    align-items: center;
+}
+
+.contact .ligne form{
+    flex:1 1 40rem;
+    padding:2rem 2.5rem;
+    box-shadow: 0 .5rem 1.5rem #0000001a;
+    border:.1rem solid #0000001a;
+    background: #fff;
+    border-radius: .5rem;
+}
+
+.contact .ligne .image{
+    flex:1 1 40rem;
+}
+
+.contact .ligne .image img{
+    width: 100%;
+}
+
+.contact .ligne form .boite{
+    padding:1rem;
+    font-size: 1.7rem;
+    color:#333;
+    text-transform: none;
+    border:.1rem solid #0000001a;
+    border-radius: .5rem;
+    margin:.7rem 0;
+    width: 100%;
+}
+
+.contact .ligne form .boite:focus{
+    border-color: crimson;
+}
+
+.contact .ligne form textarea{
+    height: 15rem;
+    resize: none;
+}
+    /*fin section 5*/
+
+    /*debut footer*/
+    
+.footer .conteneur_boite{
+    display: flex;
+    flex-wrap: wrap;
+    gap:1.5rem;
+}
+
+.footer .conteneur_boite .boite{
+    flex:1 1 25rem;
+}
+
+.footer .conteneur_boite .boite h3{
+    color:#333;
+    font-size: 2.5rem;
+    padding:1rem 0;
+}
+
+.footer .conteneur_boite .boite a{
+    display: block;
+    color:#666;
+    font-size: 1.5rem;
+    padding:1rem 0;
+}
+
+.footer .conteneur_boite .boite a:hover{
+    color:crimson;
+    text-decoration: underline;
+}
+
+.footer .conteneur_boite .boite  img{
+    margin-top: 1rem;
+}
+
+.footer .nom_developpeur{
+    text-align: center;
+    padding:1.5rem;
+    margin-top: 1.5rem;
+    padding-top: 2.5rem;
+    font-size: 2rem;
+    color:#333;
+    border-top: .1rem solid #0000001a;
+    padding-bottom: 9rem;
+}
+
+.footer .nom_developpeur span{
+    color:crimson;
+}
+
+    /*fin footer*/
+
+
+
+    
+/* media queries  */
+@media (max-width:991px)
+
+{
+    
+    html{
+        font-size: 55%;
+    }
+
+    header{
+        padding:2rem;
+    }
+
+    section{
+        padding:2rem;
+    }
+
+    .section1{
+        background-position: left;
+    }
+
+}
+
+@media (max-width:768px){
+
+    header .fa-bars{
+        display: block;
+    }
+
+    header .liens{
+        position:absolute;
+        top:100%; left:0; right:0;
+        background:#eee;
+        border-top: .1rem solid #0000001a;
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+
+    header #toggler:checked ~ .liens{
+        clip-path:polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    }
+
+    header .liens a{
+        margin:1.5rem;
+        padding:1.5rem;
+        background:#fff;
+        border:.1rem solid #0000001a;
+        display: block;
+    }
+
+    .section1 .content h3{
+        font-size: 5rem;
+    }
+
+    .section1 .content span{
+        font-size: 2.5rem;
+    }
+
+    .section3 .icone h3{
+        font-size: 2rem;
+    }
+    
+    .section3 .icone span{
+        font-size: 1.7rem;
+    }
+    
+}
+
+@media (max-width:450px){
+    
+    html{
+        font-size: 50%;
+    }
+
+    .titre{
+        font-size: 3rem;
+    }
+
+}
